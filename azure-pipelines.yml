@@ -15,3 +15,7 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
+git add azure-pipelines.yml
+git commit -m "Add build tasks"
+git push origin build-pipeline
